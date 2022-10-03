@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Projeto login</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="img">
-                foto
+                
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.php" method="post">
-                    <p>
-                        <label for="ilogin">Login:</label>
-                        <input type="email" name="login" id="ilogin">
-                    </p>
-                    <p>
-                        <label for="isenha">Senha:</label>
-                        <input type="password" name="senha" id="isenha">
-                    </p>
+                <p>Seja bem-vindo(a) novamente. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                        <div class="campo" id="cima">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" maxlength="40" required>
+                            <label for="ilogin">login</label>
+                        </div>
+                        <div class="campo">
+                            <span class="material-symbols-outlined">vpn_key</span>
+                            <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" minlength="8" required>
+                            <label for="isenha">senha</label>
+                        </div>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html" class="btn">
+                            Esqueci minha senha 
+                            <span class="material-symbols-outlined" id="span">mail</span>
+                        </a>
                 </form>
             </div>
         </section>

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, #082dff, #e68415);
+    }
+    section#login{
+        width: 80vw;
+        height: 315px;
+    }
+    section#login > div#img{
+       float: left;
+       width: 30%;
+       height: 100%;
+       background: url(../assets/img-quadrados.jpg) no-repeat;
+       background-size: cover;
+    }
+    section#login > div#form{
+        float: right;
+        width: 70%;
+    }
+    div#form > h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    div#form > p{
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    div.campo{
+        background-color: #e68415;
+        border: 2px solid #e68415;
+    }
+    .campo > input{
+        background-color: #f0aa59;
+    }
+    .campo > input:focus-within{
+        background-color: white;
+    }
+    form > input[type=submit]{
+        background-color: #082dff;
+        color: white;
+    }
+    form > input[type=submit]:hover{
+        background-color: #3fa1f1;
+        color: black;
+    }
+    form > a.btn{
+        background-color: white;
+        color: #082dff;
+        border: 1px solid #082dff;
+    }
+    form > a.btn:hover{
+        background-color: #3fa1f1;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #3261a7, #8b3dbe);
+    }
+    section#login{
+        width: 950px;
+        height: 500px;
+    }
+    section#login > div#img{
+       float: right;
+       width: 50%;
+       height: 100%;
+       background: url(../assets/img-azul.jpg) no-repeat;
+       background-size: cover;
+    }
+    section#login > div#form{
+        float: left;
+        width: 50%;
+    }
+    div#form > h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+        margin-top: 35px;
+    }
+    div#form > p{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    div#cima{
+        margin-top: 35px;
+    }
+    div.campo{
+        background-color: #8b3dbe;
+        border: 2px solid #8b3dbe;
+        
+    }
+    .campo > input{
+        background-color: #d298f8;
+    }
+    .campo > input:focus-within{
+        background-color: white;
+    }
+    form > input[type=submit]{
+        background-color: #1a4b74;
+        color: white;
+    }
+    form > input[type=submit]:hover{
+        background-color: #3fa1f1;
+        color: black;
+    }
+    form > a.btn{
+        background-color: white;
+        color: #1a4b74;
+        border: 1px solid #1a4b74;
+    }
+    form > a.btn:hover{
+        background-color: #3fa1f1;
+        color: white;
+    }
+}
